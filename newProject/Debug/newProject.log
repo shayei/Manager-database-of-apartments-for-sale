@@ -1,0 +1,23 @@
+﻿  apartmentFuncs.c
+  dateFuncs.c
+  fileFuncs.c
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\filefuncs.c(34): warning C4133: '=': incompatible types - from 'CommandNode *' to 'CommandNode *'
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\filefuncs.c(277): warning C4244: '=': conversion from 'short' to 'BYTE', possible loss of data
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\filefuncs.c(291): warning C4244: '=': conversion from 'short' to 'BYTE', possible loss of data
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\filefuncs.c(295): warning C4244: '=': conversion from 'short' to 'BYTE', possible loss of data
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\filefuncs.c(285): warning C4244: 'initializing': conversion from 'short' to 'BYTE', possible loss of data
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\filefuncs.c(286): warning C4244: 'initializing': conversion from 'short' to 'BYTE', possible loss of data
+  generalFuncs.c
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\generalfuncs.c(46): warning C4133: '=': incompatible types - from 'CommandNode *' to 'CommandNode *'
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\generalfuncs.c(61): warning C4133: '=': incompatible types - from 'CommandNode *' to 'CommandNode *'
+  getAnAptFuncs.c
+  historyFuncs.c
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\historyfuncs.c(73): warning C4133: '=': incompatible types - from 'CommandNode *' to 'CommandNode *'
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\historyfuncs.c(89): warning C4133: '=': incompatible types - from 'CommandNode *' to 'CommandNode *'
+  ListFuncs.c
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\listfuncs.c(11): warning C4133: '=': incompatible types - from 'CommandNode *' to 'CommandNode *'
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\listfuncs.c(12): warning C4133: '=': incompatible types - from 'CommandNode *' to 'CommandNode *'
+c:\users\shay eis\desktop\shay\שנה ב סמסטר א\new folder\newproject\newproject\listfuncs.c(45): warning C4133: '=': incompatible types - from 'CommandNode *' to 'CommandNode *'
+  main.c
+  Generating Code...
+  newProject.vcxproj -> C:\Users\Shay Eis\Desktop\Shay\שנה ב סמסטר א\New folder\newProject\Debug\newProject.exe
