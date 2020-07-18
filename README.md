@@ -1,195 +1,97 @@
-<img src="https://media.istockphoto.com/vectors/online-database-of-real-estate-line-icon-concept-online-database-of-vector-id1140788767" title="FVCproductions" alt="FVCproductions"></a>
+<img src="https://media.istockphoto.com/vectors/online-database-of-real-estate-line-icon-concept-online-database-of-vector-id1140788767" title="FVCproductions" alt="FVCproductions" width="250" height="250"></a>
 
 
-# Repository Title Goes Here
+# Management of a database of apartments for sale
 
-> Subtitle or Short Description Goes Here
-
-> ideally one sentence
-
-> include terms/tags that can be searched
-
-**Badges will go here**
-
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
-
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) [![Dependency Status](http://img.shields.io/gemnasium/badges/badgerbadgerbadger.svg?style=flat-square)](https://gemnasium.com/badges/badgerbadgerbadger) [![Coverage Status](http://img.shields.io/coveralls/badges/badgerbadgerbadger.svg?style=flat-square)](https://coveralls.io/r/badges/badgerbadgerbadger) [![Code Climate](http://img.shields.io/codeclimate/github/badges/badgerbadgerbadger.svg?style=flat-square)](https://codeclimate.com/github/badges/badgerbadgerbadger) [![Github Issues](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/issues.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/issues) [![Pending Pull-Requests](http://githubbadges.herokuapp.com/badges/badgerbadgerbadger/pulls.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger/pulls) [![Gem Version](http://img.shields.io/gem/v/badgerbadgerbadger.svg?style=flat-square)](https://rubygems.org/gems/badgerbadgerbadger) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
-
-- For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
-
-***INSERT ANOTHER GRAPHIC HERE***
-
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
-
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
----
-
-## Table of Contents (Optional)
-
-> If your `README` has a lot of info, section headers might be nice.
-
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
-- [License](#license)
-
-
----
-
-## Example (Optional)
-
-```javascript
-// code away!
-
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
+```
+The program must receive "commands" from the user and execute them. The "exit" command will end the program.
+It can be assumed that the input from the user is correct.
 ```
 
+**Possible commands**
+
+>	get-an-apt –MaximumPrice 1500000
+- All apartments priced up to 1,500,000 NIS will be printed on the console.
+
+>	get-an-apt –MinimumNumRooms 3
+- All apartments with at least 3 rooms will be printed on the console.
+
+>	get-an-apt –MaximumNumRooms 5
+- All apartments with a maximum of 5 rooms will be printed on the console.
+
+>	get-an-apt –Date 01052020
+- All apartments vacated by tenants until May 1, 2020 will be printed on the console.
+
+*You can combine several requirements, for example:*
+
+>	get-an-apt –MinimumNumRooms 3 –MaximumNumRooms 5 –MaximumPrice 1750000
+- All apartments with at least 3 rooms and a maximum of 5 rooms, priced up to 1,750,000 NIS will be printed on the console.
+
+>	add-an-apt "Hasavyonim 23 Ramat Ono" 2000000 4 01 01 20
+- Adding an apartment to the database at 23 Savyonim Street, Ramat Ono, which costs 2 million NIS, the number of rooms in it is 4 and the entry date is 1.1.20.
+
+>	buy-an-apt < number >
+- This order will symbolize the purchase of the apartment whose code is a < number > and will remove the apartment from the database.
+  
+>	get-an-apt –Enter < x > 
+- The codes of the apartments that entered the database in the last < x > days will be printed.
+  
+>	delete-an-apt –Enter < x >
+- The apartments that entered the database in the last < x > days will be removed.
+
+> get-an-apt –MaximumNumRooms 5 -sr
+- To each of the above commands you can add the option -s and get the information sorted from the lowest price to the highest price, or the option -sr and get the information sorted from the highest price to the lowest.
+
 ---
+### Software usage history
+<img src="https://www.roehampton.ac.uk/globalassets/images/course-pages/postgraduate/history.jpg" width="700" height="150"></a>
 
-## Installation
-
-- All the `code` required to get started
-- Images of what it should look like
-
-### Clone
-
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
-
-### Setup
-
-- If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
-
-```shell
-$ brew update
-$ brew install fvcproductions
+```
+The commands are stored in one of two repositories:
+A - Short history database by array
+B - Long history database by linked list
 ```
 
-> now install npm and bower packages
+**Possible commands**
+> !!
+- Command !! Will cause further execution of the last command entered in database A.
 
-```shell
-$ npm install
-$ bower install
-```
+> !< num > 
+- This command will execute the command with the specified number num. 
 
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+> short_history
+-  This command will print the 7 most recent commands (Database A).
 
----
+> history 
+- This command will print both databases A and B.
 
-## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
+> !< num >^str1^str2 
+- This command will execute the command number < num > which contains a str1 string in which it will be replaced with a str2 string.
 
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
-
----
-
-## Contributing
-
-> To get started...
-
-### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
-
-### Step 2
-
-- **HACK AWAY!** 🔨🔨🔨
-
-### Step 3
-
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+*The commands will be saved in a text file between runs of a program and therefore commands given in a previous run of the program can also be restored.*
 
 ---
 
-## Team
+### Saving apartments in a binary file
+<img src="https://cdn-learn.adafruit.com/guides/cropped_images/000/001/957/medium640/90486-OIL5JT-758.jpg?1521650913" width="700" height="150">
 
-> Or Contributors/People
+Apartment code - will be saved as a 'short int' binary number.
+Apartment address - the length of the string will be kept in the 'short int' and then the string (without '0 \').
+The price of the apartment - will be saved as an 'int' binary type
 
-| <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
-| :---: |:---:| :---:|
-| [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
-| <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
+The other fields are limited in size:
 
-- You can just grab their GitHub profile image URL
-- You should probably resize their picture using `?s=200` at the end of the image URL.
+Number of rooms - it is known that there will be a maximum of 15 rooms, so 4 bits are enough
+Date of entry to the apartment - day - 5 bits are enough
+Month - 4 bits are enough
+One year - 7 bits are enough
 
----
+For information regarding the number of rooms and the date of entry, 20 bits, ie 3 bytes, are sufficient.
+We will use 3 bytes when the bits are stored in them as follows:
 
-## FAQ
+The 4 most significant bits will mark the number of rooms
+The 5 bits that follow will mark the day of entry
+The 4 bits that follow will mark the month of entry
+The 7 bits that follow will mark the year of entry
 
-- **How do I do *specifically* so and so?**
-    - No problem! Just do this.
-
----
-
-## Support
-
-Reach out to me at one of the following places!
-
-- Website at <a href="http://fvcproductions.com" target="_blank">`fvcproductions.com`</a>
-- Twitter at <a href="http://twitter.com/fvcproductions" target="_blank">`@fvcproductions`</a>
-- Insert more social links here.
-
----
-
-## Donations (Optional)
-
-- You could include a <a href="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png" target="_blank">Gratipay</a> link as well.
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.png)](https://gratipay.com/fvcproductions/)
-
-
----
-
-## License
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2015 © <a href="http://fvcproductions.com" target="_blank">FVCproductions</a>.
+## ENJOY
