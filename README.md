@@ -1,5 +1,4 @@
-<img src="https://media.istockphoto.com/vectors/online-database-of-real-estate-line-icon-concept-online-database-of-vector-id1140788767" title="FVCproductions" alt="FVCproductions" width="250" height="250"></a>
-
+<img src="https://media.istockphoto.com/vectors/online-database-of-real-estate-line-icon-concept-online-database-of-vector-id1140788767" width="350" height="350"></a>
 
 # Management of a database of apartments for sale
 
