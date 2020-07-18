@@ -1,8 +1,5 @@
-<a href="https://media.istockphoto.com/vectors/online-database-of-real-estate-line-icon-concept-online-database-of-vector-id1140788767"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
+<img src="https://media.istockphoto.com/vectors/online-database-of-real-estate-line-icon-concept-online-database-of-vector-id1140788767" title="FVCproductions" alt="FVCproductions"></a>
 
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
-
-***INSERT GRAPHIC HERE (include hyperlink in image)***
 
 # Repository Title Goes Here
 
